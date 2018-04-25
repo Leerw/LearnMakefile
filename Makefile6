@@ -1,0 +1,21 @@
+foo = $(bar)
+bar = $(ugh)
+ugh = Huh?
+all:
+	echo $(foo)
+
+a = $(b)
+b = $(a)
+all:
+	echo $(a)
+
+x:=foo
+y:=$(x)bar
+x:=later
+all:
+	@echo $(y)
+
+y:=$(x)bar
+x:=foo
+all:
+	@echo $(y)

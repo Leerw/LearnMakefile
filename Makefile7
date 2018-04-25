@@ -1,0 +1,4 @@
+x:=a.o b.o c.o
+y:=$(x:.o=.c)
+all:
+	@echo $(y)
