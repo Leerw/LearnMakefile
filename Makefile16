@@ -1,0 +1,4 @@
+a=
+m=$(if a, a is not empty, a is empty)
+all:
+	@echo $(m)
